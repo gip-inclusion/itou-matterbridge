@@ -1,0 +1,17 @@
+PreserveThreading=true
+[mattermost]
+    [mattermost.betagouv]
+    PreserveThreading=true
+    PrefixMessagesWithNick=true
+    RemoteNickFormat="<{NICK}> "
+    UseUserName=true
+[slack]
+    [slack.itou]
+    PrefixMessagesWithNick=true
+    RemoteNickFormat="[On parle ici -> https://mattermost.incubateur.net et de l'aide sur #aide-mattermost] <{NICK}> "
+
+[[samechannelgateway]]
+    enable = true
+    name = "samechannel1"
+    accounts = [ "mattermost.betagouv" ]
+    channels = [ "tmp-celinems-test" ]
