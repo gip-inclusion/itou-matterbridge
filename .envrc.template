@@ -1,0 +1,11 @@
+# Don't forget to invite the bot to relevant channels in each service!
+
+# https://github.com/42wim/matterbridge/wiki/Gateway-config-%28basic%29#environment-variables
+MATTERBRIDGE_MATTERMOST_BETAGOUV_SERVER=
+MATTERBRIDGE_MATTERMOST_BETAGOUV_TEAM=
+
+# Profile > Security > Token
+MATTERBRIDGE_MATTERMOST_BETAGOUV_TOKEN=
+
+# https://github.com/42wim/matterbridge/wiki/Slack-bot-setup
+MATTERBRIDGE_SLACK_ITOU_TOKEN=

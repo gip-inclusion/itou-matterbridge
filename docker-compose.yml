@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  matterbridge:
+    restart: unless-stopped
+    build:
+      context: .
+    env_file:
+    - .envrc
+    volumes:
+    - ./matterbridge.toml:/etc/matterbridge/matterbridge.toml:ro
