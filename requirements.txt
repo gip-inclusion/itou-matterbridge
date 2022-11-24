@@ -1,0 +1,2 @@
+Werkzeug==2.2.2
+pyuwsgi==2.0.21
