@@ -1,0 +1,32 @@
+# Accounts
+[mattermost.betagouv]
+    PreserveThreading=true
+    UseUserName=true # No effect.
+    PrefixMessagesWithNick=true # Overriding bot's name doesn't work.
+    RemoteNickFormat="**{NICK}** : "
+
+[slack.itou]
+    PreserveThreading=true
+    UseFullName=true # Doesn't do nothing.
+    RemoteNickFormat="{NICK}" # How remote username is displayed on Slack (Bot name).
+
+## Gateways
+# Channels must share the same name.
+# [[samechannelgateway]]
+#     enable = true
+#     name = "samechannel1"
+#     accounts = [ "mattermost.betagouv", "slack.itou" ]
+#     channels = [ "tmp-celinems-test" ]
+
+[[gateway]]
+    name="gateway-c1-faciliter"
+    enable=true
+
+# Mattermost channel AS SEEN IN THE URL!!
+[[gateway.inout]]
+    account="mattermost.betagouv"
+    channel="startup-itou"
+
+[[gateway.inout]]
+    account="slack.itou"
+    channel="c1-emplois"
