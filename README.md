@@ -9,6 +9,10 @@ L'objectif de ce dépôt est de déployer Matterbridge sur Clever Cloud.
 
 Tout se passe dans `matterbridge.toml`. [Lire la doc officielle](https://github.com/42wim/matterbridge/wiki/Gateway-config-%28basic%29).
 
+:warning: Dans Slack, il faut inviter l'application « Matterbridge » au canal à configurer. Pour cela, ouvrez
+l'application Matterbridge et cliquez sur « Ajouter cette application à un canal ». Il faut le faire AVANT d'avoir modifié
+`matterbridge.toml`, sinon Matterbridge ne pourra pas trouver le canal lors du déploiement.
+
 Si les canaux à connecter dans Mattermost et dans Slack portent exactement le même nom, vous pouvez modifier la section
 `[[samechannelgateway]]`.
 
@@ -38,6 +42,10 @@ Sinon :
 
 - Slack Itou
 - Mattermost Beta
+
+### Problèmes connus
+
+Chaque déploiement casse le lien entre un message parent et ses réponses (_threads_ ou fils). Il faut donc espacer au maximum les déploiements ou les effectuer pendant une période de moindre activité.
 
 
 ## Doc dev
