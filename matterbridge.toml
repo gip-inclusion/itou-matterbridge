@@ -18,6 +18,7 @@
 #     accounts = [ "mattermost.betagouv", "slack.itou" ]
 #     channels = [ "tmp-celinems-test" ]
 
+
 [[gateway]]
     name="gateway-c1-faciliter"
     enable=true
@@ -30,3 +31,16 @@
 [[gateway.inout]]
     account="slack.itou"
     channel="c1-emplois"
+
+
+[[gateway]]
+    name="gateway-c5-inclusion-connect"
+    enable=true
+
+[[gateway.inout]]
+    account="mattermost.betagouv"
+    channel="gip-inclusion-connect"
+
+[[gateway.inout]]
+    account="slack.itou"
+    channel="c5-inclusion-connect"
