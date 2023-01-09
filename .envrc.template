@@ -1,0 +1,14 @@
+# Don't forget to invite the bot to relevant channels in each service!
+
+# https://github.com/42wim/matterbridge/wiki/Gateway-config-%28basic%29#environment-variables
+export MATTERBRIDGE_MATTERMOST_BETAGOUV_SERVER=
+export MATTERBRIDGE_MATTERMOST_BETAGOUV_TEAM=
+
+# Profile > Security > Token
+export MATTERBRIDGE_MATTERMOST_BETAGOUV_TOKEN=
+
+# https://github.com/42wim/matterbridge/wiki/Slack-bot-setup
+export MATTERBRIDGE_SLACK_ITOU_TOKEN=
+
+# Absolute path to the project root directory where `supervisord.conf` lives.
+export APP_HOME=
