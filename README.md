@@ -45,7 +45,9 @@ Sinon :
 
 ### Problèmes connus
 
-Chaque déploiement casse le lien entre un message parent et ses réponses (_threads_ ou fils). Il faut donc espacer au maximum les déploiements ou les effectuer pendant une période de moindre activité.
+- Chaque déploiement casse le lien entre un message parent et ses réponses (_threads_ ou fils). Il faut donc espacer au maximum les déploiements ou les effectuer pendant une période de moindre activité.
+- Les identifiants Slack génèrent des problèmes sur Mattermost car l'espace n'est pas interprété. `@Sonia Perelroizen` devient `@Sonia Tizzaoui Perelroizen`.
+- Le service s'éteint et se redémarre tout seul (Supervisor) mais cela ne se reflète pas dans Clever, ce qui occasionne des problèmes avec les fils.
 
 
 ## Doc dev
