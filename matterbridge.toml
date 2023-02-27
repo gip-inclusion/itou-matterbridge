@@ -12,11 +12,11 @@
 
 ## Gateways
 # Channels must share the same name.
-# [[samechannelgateway]]
-#     enable = true
-#     name = "samechannel1"
-#     accounts = [ "mattermost.betagouv", "slack.itou" ]
-#     channels = [ "tmp-celinems-test" ]
+[[samechannelgateway]]
+    enable = true
+    name = "samechannel1"
+    accounts = [ "mattermost.betagouv", "slack.itou" ]
+    channels = [ "gip-inclusion-design", "gip-inclusion-bizdev" ]
 
 
 [[gateway]]
@@ -31,3 +31,42 @@
 [[gateway.inout]]
     account="slack.itou"
     channel="c1-emplois"
+
+
+[[gateway]]
+    name="gateway-c2-gip-inclusion-pilotage"
+    enable=true
+
+[[gateway.inout]]
+    account="mattermost.betagouv"
+    channel="gip-inclusion-pilotage"
+
+[[gateway.inout]]
+    account="slack.itou"
+    channel="c2-gip-inclusion-pilotage"
+
+
+[[gateway]]
+    name="gateway-gip-inclusion-agents"
+    enable=true
+
+[[gateway.inout]]
+    account="mattermost.betagouv"
+    channel="gip-inclusion-admin"
+
+[[gateway.inout]]
+    account="slack.itou"
+    channel="gip-inclusion-agents"
+
+
+[[gateway]]
+    name="gateway-c4-business"
+    enable=true
+
+[[gateway.inout]]
+    account="mattermost.betagouv"
+    channel="startup-lemarche"
+
+[[gateway.inout]]
+    account="slack.itou"
+    channel="c4-business"
