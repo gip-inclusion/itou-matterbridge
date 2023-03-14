@@ -12,3 +12,7 @@ export MATTERBRIDGE_SLACK_ITOU_TOKEN=
 
 # Absolute path to the project root directory where `supervisord.conf` lives.
 export APP_HOME=
+
+# Personal GitHub token to download Matterbridge artifacts
+# See https://stackoverflow.com/questions/27254312/download-github-build-artifact-release-using-wget-curl
+export GITHUB_TOKEN=
