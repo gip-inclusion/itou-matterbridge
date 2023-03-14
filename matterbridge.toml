@@ -70,3 +70,16 @@
 [[gateway.inout]]
     account="slack.itou"
     channel="c4-business"
+
+
+[[gateway]]
+    name="gateway-esat-c2"
+    enable=true
+
+[[gateway.inout]]
+    account="mattermost.betagouv"
+    channel="gip-inclusion-investigation-esat"
+
+[[gateway.inout]]
+    account="slack.itou"
+    channel="esat-c2"
