@@ -83,3 +83,16 @@
 [[gateway.inout]]
     account="slack.itou"
     channel="esat-c2"
+
+
+[[gateway]]
+    name="gateway-startup-mon-recap"
+    enable=true
+
+[[gateway.inout]]
+    account="mattermost.betagouv"
+    channel="startup-monrecap"
+
+[[gateway.inout]]
+    account="slack.itou"
+    channel="c6-mon-recap"
