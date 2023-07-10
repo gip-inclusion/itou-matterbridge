@@ -96,3 +96,16 @@
 [[gateway.inout]]
     account="slack.itou"
     channel="c6-mon-recap"
+
+
+[[gateway]]
+    name="gateway-veille"
+    enable=true
+
+[[gateway.inout]]
+    account="mattermost.betagouv"
+    channel="gip-inclusion-veille"
+
+[[gateway.inout]]
+    account="slack.itou"
+    channel="veille"
