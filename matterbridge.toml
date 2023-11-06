@@ -109,3 +109,16 @@
 [[gateway.inout]]
     account="slack.itou"
     channel="veille"
+
+
+[[gateway]]
+    name="gateway-le-bar"
+    enable=true
+
+[[gateway.inout]]
+    account="mattermost.betagouv"
+    channel="gip-inclusion-lebar"
+
+[[gateway.inout]]
+    account="slack.itou"
+    channel="gip-le-bar"
