@@ -91,7 +91,7 @@
 
 [[gateway.inout]]
     account="mattermost.betagouv"
-    channel="startup-monrecap"
+    channel="startup-mon-recap"
 
 [[gateway.inout]]
     account="slack.itou"
