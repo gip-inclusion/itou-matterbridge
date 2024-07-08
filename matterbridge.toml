@@ -135,3 +135,16 @@
 [[gateway.inout]]
     account="slack.itou"
     channel="c7-gps"
+
+
+[[gateway]]
+    name="gateway-communication"
+    enable=true
+
+[[gateway.inout]]
+    account="mattermost.betagouv"
+    channel="infos-actus-gip-inclusion"
+
+[[gateway.inout]]
+    account="slack.itou"
+    channel="gip-inclusion-communication"
