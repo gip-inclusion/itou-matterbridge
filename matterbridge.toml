@@ -151,7 +151,7 @@
 
 
 [[gateway]]
-    name="gateway-gip-inclusion-locayx"
+    name="gateway-gip-inclusion-locaux"
     enable=true
 
 [[gateway.inout]]
