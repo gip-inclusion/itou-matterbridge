@@ -148,3 +148,17 @@
 [[gateway.inout]]
     account="slack.itou"
     channel="gip-inclusion-communication"
+
+
+[[gateway]]
+    name="gateway-gip-inclusion-locaux"
+    enable=true
+
+[[gateway.inout]]
+    account="mattermost.betagouv"
+    channel="gip-inclusion-locaux"
+
+[[gateway.inout]]
+    account="slack.itou"
+    channel="locaux-paris"
+
