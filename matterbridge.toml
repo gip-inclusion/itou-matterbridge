@@ -162,3 +162,15 @@
     account="slack.itou"
     channel="locaux-paris"
 
+
+[[gateway]]
+    name="gateway-gip-demat-conventionnement"
+    enable=true
+
+[[gateway.inout]]
+    account="mattermost.betagouv"
+    channel="gip-demat-conventionnement"
+
+[[gateway.inout]]
+    account="slack.itou"
+    channel="c2-dematconventionnement"
