@@ -134,7 +134,7 @@
 
 [[gateway.inout]]
     account="slack.itou"
-    channel="c7-gps"
+    channel="gps"
 
 
 [[gateway]]
@@ -173,4 +173,4 @@
 
 [[gateway.inout]]
     account="slack.itou"
-    channel="c2-dematconventionnement"
+    channel="demat-conventionnement"
