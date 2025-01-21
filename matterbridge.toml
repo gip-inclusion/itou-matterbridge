@@ -10,14 +10,6 @@
     UseFullName=true # Doesn't do nothing.
     RemoteNickFormat="{NICK}" # How remote username is displayed on Slack (Bot name).
 
-## Gateways
-# Channels must share the same name.
-[[samechannelgateway]]
-    enable = true
-    name = "samechannel1"
-    accounts = [ "mattermost.betagouv", "slack.itou" ]
-    channels = [ "gip-inclusion-design", "gip-inclusion-bizdev" ]
-
 
 [[gateway]]
     name="gateway-c1-faciliter"
@@ -30,7 +22,33 @@
 
 [[gateway.inout]]
     account="slack.itou"
-    channel="c1-emplois"
+    channel="emplois"
+
+
+[[gateway]]
+    name="gateway-bizdev"
+    enable=true
+
+[[gateway.inout]]
+    account="mattermost.betagouv"
+    channel="gip-inclusion-bizdev"
+
+[[gateway.inout]]
+    account="slack.itou"
+    channel="domaine-bizdev"
+
+
+[[gateway]]
+    name="gateway-plateforme-design"
+    enable=true
+
+[[gateway.inout]]
+    account="mattermost.betagouv"
+    channel="gip-inclusion-design"
+
+[[gateway.inout]]
+    account="slack.itou"
+    channel="domaine-design"
 
 
 [[gateway]]
@@ -56,7 +74,7 @@
 
 [[gateway.inout]]
     account="slack.itou"
-    channel="gip-inclusion-agents"
+    channel="plateforme-agents"
 
 
 [[gateway]]
