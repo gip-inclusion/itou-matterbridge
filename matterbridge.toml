@@ -174,3 +174,16 @@
 [[gateway.inout]]
     account="slack.itou"
     channel="demat-conventionnement"
+
+
+[[gateway]]
+    name="gateway-gip-plateforme-developpement"
+    enable=true
+
+[[gateway.inout]]
+    account="mattermost.betagouv"
+    channel="gip-inclusion-developpement"
+
+[[gateway.inout]]
+    account="slack.itou"
+    channel="plateforme-developpement"
