@@ -23,3 +23,16 @@
     account="slack.itou"
     channel="locaux-paris"
 
+
+[[gateway]]
+    name="gateway-rdv-insertion"
+    enable=true
+
+[[gateway.inout]]
+    account="mattermost.betagouv"
+    channel="startup-rdv-insertion"
+
+[[gateway.inout]]
+    account="slack.itou"
+    channel="rdv-insertion"
+
